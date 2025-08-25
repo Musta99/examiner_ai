@@ -1,8 +1,8 @@
 import 'package:examiner_ai/config/viva_session_screen.dart';
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class HomeScreen1 extends StatelessWidget {
+  const HomeScreen1({super.key});
 
   @override
   Widget build(BuildContext context) {

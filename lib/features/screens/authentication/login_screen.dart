@@ -1,4 +1,5 @@
 import 'package:examiner_ai/features/screens/authentication/signup_screen.dart';
+import 'package:examiner_ai/features/screens/bottomNavigation/bottom_navigation_bar.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -105,7 +106,14 @@ class LoginScreen extends StatelessWidget {
                         ),
 
                         ShadButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => BottomNavBar(),
+                              ),
+                            );
+                          },
                           width: double.infinity,
                           gradient: LinearGradient(
                             colors: [Color(0xff3780F1), Color(0xff1A9E5B)],
