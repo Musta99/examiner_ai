@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
           background: Color(0xff313335),
         ),
       ),
-      home: HomeScreen(),
+      home: OnboardingScreen(),
     );
   }
 }

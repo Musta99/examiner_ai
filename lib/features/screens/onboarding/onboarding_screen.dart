@@ -1,4 +1,5 @@
 import 'package:dots_indicator/dots_indicator.dart';
+import 'package:examiner_ai/features/screens/authentication/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:iconsax/iconsax.dart';
@@ -208,7 +209,12 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         controller.jumpToPage(currentPage);
                       } else {
                         // Navigate to home/login/etc. when onboarding is finished
-                        print("No pages");
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => LoginScreen(),
+                          ),
+                        );
                       }
                     });
                   },
